@@ -328,7 +328,7 @@ pip install "rai-toolkit[all] @ git+https://github.com/wandb/rai-toolkit.git"
 ```
 
 You can pin to a specific commit, tag, or branch by appending `@<ref>` to the
-git URL (e.g. `git+https://github.com/wandb/rai-toolkit.git@v0.2.0`).
+git URL (e.g. `git+https://github.com/wandb/rai-toolkit.git@v0.3.0`).
 
 The Python import path is `rai_toolkit` (e.g. `from rai_toolkit import Assessor`)
 regardless of which install method you use.

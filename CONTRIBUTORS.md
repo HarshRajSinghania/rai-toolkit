@@ -8,7 +8,7 @@ SPDX-PackageName: rai-toolkit
 
 Thank you to everyone contributing code, tests, documentation, bug reports, and
 review to rai-toolkit. The table below credits merged contributions verified
-against `main` through September 12, 2026. It is alphabetical by GitHub handle
+against `main` through September 16, 2026. It is alphabetical by GitHub handle
 and is not a ranking or a complete record of non-code contributions.
 
 Karan Nisar ([@knisar](https://github.com/knisar)) created and maintains the
@@ -22,6 +22,7 @@ toolkit. Community contributions include:
 | [@denis-samatov](https://github.com/denis-samatov) | HR industry preset ([#24](https://github.com/wandb/rai-toolkit/pull/24)) |
 | [@dvd233](https://github.com/dvd233) | Explicit adapter call-time options ([#65](https://github.com/wandb/rai-toolkit/pull/65)) |
 | [@EffNine](https://github.com/EffNine) | Configured scorer names in Weave ([#33](https://github.com/wandb/rai-toolkit/pull/33)) |
+| [@KunyangZhang](https://github.com/KunyangZhang) | Unassessed results for unsupported output formats ([#74](https://github.com/wandb/rai-toolkit/pull/74)) |
 | [@M4h1m4](https://github.com/M4h1m4) | Vendor-neutral `CallableModel` adapter ([#64](https://github.com/wandb/rai-toolkit/pull/64)) |
 | [@nightcityblade](https://github.com/nightcityblade) | Normalized groundedness evidence matching ([#18](https://github.com/wandb/rai-toolkit/pull/18)) |
 | [@robbat2](https://github.com/robbat2) | Dependency-license documentation and HealthBench citations ([#1](https://github.com/wandb/rai-toolkit/pull/1)) |
