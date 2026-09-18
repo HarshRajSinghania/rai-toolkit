@@ -4,8 +4,8 @@
 
 """Offline tests for `KeywordToxicityScorer` keyword matching.
 
-The scorer is part of the default output guardrail, so a keyword hit rejects the
-response. These tests pin the two ways a hit used to be reported for text that
+When explicitly configured, the scorer can flag a response or block it through
+`GuardedModel(block_on_scorer_fail=True)`. These tests cover false hits for text that
 contains none of the configured keywords as words of its own.
 """
 
@@ -107,8 +107,8 @@ def test_a_trimmed_stem_on_its_own_is_not_a_hit(scorer: KeywordToxicityScorer) -
 
 
 async def test_guardrail_blocks_an_inflected_threat() -> None:
-    """The scorer is a default output guardrail, so an inflected threat has to be
-    blocked rather than allowed."""
+    """An explicitly configured blocking guardrail must reject an inflected threat
+    detected by its keyword scorer."""
     from rai_toolkit.guardrails import GuardedModel
     from rai_toolkit.models import CallableModel
 
