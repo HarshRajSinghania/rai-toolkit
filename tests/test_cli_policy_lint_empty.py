@@ -35,11 +35,7 @@ def test_policies_lint_fails_when_directory_has_only_unrelated_files(
 
 def test_policies_lint_accepts_valid_empty_policy_set(tmp_path: Path, capsys) -> None:
     (tmp_path / "empty.yaml").write_text(
-        """\
-name: Empty policy set
-version: \"1.0.0\"
-policies: []
-""",
+        "name: Empty policy set\nversion: 1.0.0\npolicies: []\n",
         encoding="utf-8",
     )
 
@@ -52,17 +48,15 @@ policies: []
 
 def test_policies_lint_accepts_disabled_only_policy_set(tmp_path: Path, capsys) -> None:
     (tmp_path / "disabled.yaml").write_text(
-        """\
-name: Disabled policy set
-version: \"1.0.0\"
-policies:
-  - name: block-secret
-    description: Block secret output
-    severity: high
-    enabled: false
-    trigger:
-      output_contains: [secret]
-""",
+        "name: Disabled policy set\n"
+        "version: 1.0.0\n"
+        "policies:\n"
+        "  - name: block-secret\n"
+        "    description: Block secret output\n"
+        "    severity: high\n"
+        "    enabled: false\n"
+        "    trigger:\n"
+        "      output_contains: [secret]\n",
         encoding="utf-8",
     )
 
@@ -76,16 +70,14 @@ policies:
 
 def test_policies_lint_accepts_enabled_policy(tmp_path: Path, capsys) -> None:
     (tmp_path / "valid.yaml").write_text(
-        """\
-name: Test policy set
-version: \"1.0.0\"
-policies:
-  - name: block-secret
-    description: Block secret output
-    severity: high
-    trigger:
-      output_contains: [secret]
-""",
+        "name: Test policy set\n"
+        "version: 1.0.0\n"
+        "policies:\n"
+        "  - name: block-secret\n"
+        "    description: Block secret output\n"
+        "    severity: high\n"
+        "    trigger:\n"
+        "      output_contains: [secret]\n",
         encoding="utf-8",
     )
 
@@ -99,13 +91,11 @@ policies:
 
 def test_policies_lint_rejects_invalid_policy_directory(tmp_path: Path, capsys) -> None:
     (tmp_path / "invalid.yaml").write_text(
-        """\
-name: Test policy set
-policies:
-  - name: invalid policy name
-    description: Invalid policy
-    trigger: {}
-""",
+        "name: Test policy set\n"
+        "policies:\n"
+        "  - name: invalid policy name\n"
+        "    description: Invalid policy\n"
+        "    trigger: {}\n",
         encoding="utf-8",
     )
 
