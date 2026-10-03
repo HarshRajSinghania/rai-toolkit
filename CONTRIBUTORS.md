@@ -8,7 +8,7 @@ SPDX-PackageName: rai-toolkit
 
 Thank you to everyone contributing code, tests, documentation, bug reports, and
 review to rai-toolkit. The table below credits merged contributions verified
-against `main` through September 16, 2026. It is alphabetical by GitHub handle
+against `main` through October 2, 2026. It is alphabetical by GitHub handle
 and is not a ranking or a complete record of non-code contributions.
 
 Karan Nisar ([@knisar](https://github.com/knisar)) created and maintains the
@@ -17,17 +17,20 @@ toolkit. Community contributions include:
 | Contributor | Merged work |
 | --- | --- |
 | [@a0927929980-dot](https://github.com/a0927929980-dot) | Groundedness handling for behavioral refusals ([#17](https://github.com/wandb/rai-toolkit/pull/17)) |
-| [@abhnvgrg](https://github.com/abhnvgrg) | Model adapter contract documentation and conformance suite ([#61](https://github.com/wandb/rai-toolkit/pull/61)) |
-| [@adity982](https://github.com/adity982) | Groundedness scorer with verified evidence ([#13](https://github.com/wandb/rai-toolkit/pull/13)) |
+| [@abhnvgrg](https://github.com/abhnvgrg) | Model adapter contract documentation and conformance suite, and rejection of non-finite normalized scores ([#61](https://github.com/wandb/rai-toolkit/pull/61), [#68](https://github.com/wandb/rai-toolkit/pull/68)) |
+| [@adity982](https://github.com/adity982) | Groundedness scorer with verified evidence and deterministic tool-call accuracy scoring ([#13](https://github.com/wandb/rai-toolkit/pull/13), [#72](https://github.com/wandb/rai-toolkit/pull/72)) |
+| [@arian-bozorgzad](https://github.com/arian-bozorgzad) | Source locations in JSONL dataset errors ([#87](https://github.com/wandb/rai-toolkit/pull/87)) |
 | [@denis-samatov](https://github.com/denis-samatov) | HR industry preset ([#24](https://github.com/wandb/rai-toolkit/pull/24)) |
 | [@dvd233](https://github.com/dvd233) | Explicit adapter call-time options ([#65](https://github.com/wandb/rai-toolkit/pull/65)) |
 | [@EffNine](https://github.com/EffNine) | Configured scorer names in Weave ([#33](https://github.com/wandb/rai-toolkit/pull/33)) |
-| [@KunyangZhang](https://github.com/KunyangZhang) | Unassessed results for unsupported output formats ([#74](https://github.com/wandb/rai-toolkit/pull/74)) |
+| [@KunyangZhang](https://github.com/KunyangZhang) | Keyword matching that preserves inflections without matching inside other words, and unassessed results for unsupported output formats ([#73](https://github.com/wandb/rai-toolkit/pull/73), [#74](https://github.com/wandb/rai-toolkit/pull/74)) |
 | [@M4h1m4](https://github.com/M4h1m4) | Vendor-neutral `CallableModel` adapter ([#64](https://github.com/wandb/rai-toolkit/pull/64)) |
 | [@nightcityblade](https://github.com/nightcityblade) | Normalized groundedness evidence matching ([#18](https://github.com/wandb/rai-toolkit/pull/18)) |
+| [@NourMoftah](https://github.com/NourMoftah) | CLI version reporting and policy-lint failure when no YAML files are checked ([#83](https://github.com/wandb/rai-toolkit/pull/83), [#84](https://github.com/wandb/rai-toolkit/pull/84)) |
 | [@robbat2](https://github.com/robbat2) | Dependency-license documentation and HealthBench citations ([#1](https://github.com/wandb/rai-toolkit/pull/1)) |
 | [@sansynx](https://github.com/sansynx) | Example validation and offline CLI tests ([#46](https://github.com/wandb/rai-toolkit/pull/46), [#47](https://github.com/wandb/rai-toolkit/pull/47)) |
 | [@schallten](https://github.com/schallten) | Anthropic Messages API adapter ([#56](https://github.com/wandb/rai-toolkit/pull/56)) |
+| [@Sonike](https://github.com/Sonike) | Source-aware JSON dataset shape errors ([#99](https://github.com/wandb/rai-toolkit/pull/99)) |
 | [@Srijan229](https://github.com/Srijan229) | Shared package and report version source ([#54](https://github.com/wandb/rai-toolkit/pull/54)) |
 | [@TheJhyeFactor](https://github.com/TheJhyeFactor) | OpenAI-compatible adapter tests ([#48](https://github.com/wandb/rai-toolkit/pull/48)) |
 | [@TrueFurina](https://github.com/TrueFurina) | Four red-team attack templates ([#11](https://github.com/wandb/rai-toolkit/pull/11)) |
