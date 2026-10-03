@@ -645,7 +645,10 @@ assert result.assessed and result.passed
 
 The current pipeline does not collect or forward invocation traces
 automatically. The scorer measures requested calls and exact arguments only;
-it does not establish successful execution or task completion.
+it does not establish successful execution or task completion. A runnable
+walkthrough of a pass, an argument mismatch, a forbidden call, and an
+incomplete trace is in
+[docs/tool_call_accuracy.md](docs/tool_call_accuracy.md).
 
 ## CLI
 
